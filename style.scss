@@ -1,0 +1,12 @@
+$main_font: 'Readex Pro';
+$second_font: 'Inter';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
