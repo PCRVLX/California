@@ -9,21 +9,118 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="owl.theme.default.css">
-    <link rel="stylesheet" href="owl.carousel.css">
-    <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body class="light">
+<header class=" header-wrapper container d-flex align-items-center justify-content-between">
+    <a href="#" class="logo">
+        <img src="images/logo.svg" alt="Logo">
+    </a>
+    <div class="nav">
+        <nav class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item active-nav"><a href="#" class="hover-target">all products</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">Solutions</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">ABOUT</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+    <ul class="d-flex align-items-center list">
+        <li>
+            <a href="#" title="search">
+                <img src="images/search.svg" alt="search">
+            </a>
+        </li>
+        <li>
+            <a href="#" title="shop">
+                <img src="images/shop.svg" alt="shop">
+            </a>
+        </li>
+    </ul>
+    <div class="nav-but-wrap">
+        <div class="menu-icon hover-target">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>
+    </div>
+</header>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
+
+<section>
+    <div class="container background owl-carousel">
+        <div class="row">
+            <div class="col-6">
+                <div class="description">
+                <h2>The new phones are here take a look.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                    Faucibus morbi turpis.</p>
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="images/phone.png" alt="phone">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="description">
+                    <h2>The new phones are here take a look.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                        Faucibus morbi turpis.</p>
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="images/phone.png" alt="phone">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="description">
+                    <h2>The new phones are here take a look.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                        Faucibus morbi turpis.</p>
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="images/phone.png" alt="phone">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="description_sec text-center">
+            <h2>Shop our latest offers and categories</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam,<br>
+                tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
 
 
 
 
 
 
-<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+<script src="https://kit.fontawesome.com/f580bbaecd.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/script.js"></script>
 </body>
