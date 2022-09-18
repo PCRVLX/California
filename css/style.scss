@@ -808,14 +808,14 @@ body.light .switch-wrap p span:nth-child(1):before {
       font-weight: 400;
       color: #000000;
       margin-bottom: 0;
-      margin-top: 41px;
+      padding-top: 41px;
     }
     h4{
       font: 28px/35px $main_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
-      margin-bottom: 30px;
+      padding-bottom: 30px;
     }
     a{
       font: 18px/22px $second_font;
@@ -827,7 +827,16 @@ body.light .switch-wrap p span:nth-child(1):before {
       border: 1px solid #000000;
       border-radius: 200px;
       text-decoration: none;
-      margin-bottom: 30px;
+    }
+    img{
+      padding-top: 30px;
     }
   }
 }
+.card{
+  &:hover {
+    transform: translateY(40px) scale(1.05);
+    transition: ease-in-out 1s;
+  }
+}
+

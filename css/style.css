@@ -778,14 +778,14 @@ body.light .switch-wrap p span:nth-child(1):before {
   font-weight: 400;
   color: #000000;
   margin-bottom: 0;
-  margin-top: 41px;
+  padding-top: 41px;
 }
 .best-around .best-card h4 {
   font: 28px/35px "Readex Pro";
   font-style: normal;
   font-weight: 400;
   color: #000000;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .best-around .best-card a {
   font: 18px/22px "Inter";
@@ -797,7 +797,14 @@ body.light .switch-wrap p span:nth-child(1):before {
   border: 1px solid #000000;
   border-radius: 200px;
   text-decoration: none;
-  margin-bottom: 30px;
+}
+.best-around .best-card img {
+  padding-top: 30px;
+}
+
+.card:hover {
+  transform: translateY(40px) scale(1.05);
+  transition: ease-in-out 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
