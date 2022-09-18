@@ -70,7 +70,7 @@ body {
   height: 30px;
   width: 30px;
   position: relative;
-  z-index: 2;
+  z-index: 98;
   cursor: pointer;
   display: block;
 }
@@ -523,7 +523,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 ================================================== */
 
 body.light {
-  background-color: #fff;
+  background-color: #F5F5F5;
 }
 
 body.light .cursor,
@@ -674,5 +674,52 @@ body.light .switch-wrap p span:nth-child(1):before {
     font-weight: 400;
     color: #000000;
     margin-bottom: 55px;
+  }
+}
+.box-f{
+  background: #FFFFFF;
+  border-radius: 32px;
+}
+.box-desc{
+  text-align: right;
+  p{
+    font: 15px/19px $second_font;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0;
+  }
+  h4{
+    font: 32px/38px $main_font;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+  }
+}
+.laptop{
+  margin-bottom: 72px;
+  .box-desc{
+    margin: 0 42px;
+  }
+}
+.watch{
+  img{
+    margin-right: 42px;
+  }
+}
+.phone{
+  height: 792px;
+  img{
+    margin-top: 144px;
+    margin-bottom: 41px;
+  }
+  .box-desc{
+    text-align: center;
+  }
+}
+.tablets{
+  height: 792px;
+  .box-desc{
+    text-align: center;
   }
 }

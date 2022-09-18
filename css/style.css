@@ -57,7 +57,7 @@ body .cursor2, body .cursor3 {
   height: 30px;
   width: 30px;
   position: relative;
-  z-index: 2;
+  z-index: 98;
   cursor: pointer;
   display: block;
 }
@@ -505,7 +505,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 /* #Light
 ================================================== */
 body.light {
-  background-color: #fff;
+  background-color: #F5F5F5;
 }
 
 body.light .cursor,
@@ -647,6 +647,57 @@ body.light .switch-wrap p span:nth-child(1):before {
   font-weight: 400;
   color: #000000;
   margin-bottom: 55px;
+}
+
+.box-f {
+  background: #FFFFFF;
+  border-radius: 32px;
+}
+
+.box-desc {
+  text-align: right;
+}
+.box-desc p {
+  font: 15px/19px "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 0;
+}
+.box-desc h4 {
+  font: 32px/38px "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+.laptop {
+  margin-bottom: 72px;
+}
+.laptop .box-desc {
+  margin: 0 42px;
+}
+
+.watch img {
+  margin-right: 42px;
+}
+
+.phone {
+  height: 792px;
+}
+.phone img {
+  margin-top: 144px;
+  margin-bottom: 41px;
+}
+.phone .box-desc {
+  text-align: center;
+}
+
+.tablets {
+  height: 792px;
+}
+.tablets .box-desc {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
