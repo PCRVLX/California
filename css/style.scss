@@ -614,9 +614,6 @@ body.light .switch-wrap p span:nth-child(1):before {
     color: #000000;
     border: 1px solid #000000;
     border-radius: 200px;
-    width: 170px;
-    height: 50px;
-    display: inline-block;
     padding: 14px 53px;
     text-decoration: none;
   }
@@ -729,5 +726,108 @@ body.light .switch-wrap p span:nth-child(1):before {
   }
   .box-desc{
     text-align: center;
+  }
+}
+.most-items{
+  padding-bottom: 27px;
+  padding-top: 72px;
+  .most_selled {
+    h3{
+      font: 42px/52px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 9px;
+    }
+
+    p {
+      font: 13px/17px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      color: #000000;
+      margin-bottom: 59px;
+    }
+  }
+  img{
+    margin-bottom: 37px;
+  }
+  .sell-description{
+    h3{
+      font: 22px/28px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+    }
+    p{
+      font: 14px/17px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #4B4B4B;
+      margin-bottom: 8px;
+    }
+    span{
+      font: 18px/22px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+    }
+  }
+}
+.best-around{
+  margin-top: 47px;
+  background: #FFFFFF;
+  .best-selled{
+    h3{
+      font: 42px/52px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 9px;
+    }
+
+    p {
+      font: 13px/17px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      color: #000000;
+      margin-bottom: 56px;
+    }
+  }
+  .background{
+    background: #F8F9FA;
+    border-radius: 16px;
+  }
+  .best-card{
+    p{
+      font: 13px/17px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 0;
+      margin-top: 41px;
+    }
+    h4{
+      font: 28px/35px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+    a{
+      font: 18px/22px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: #000000;
+      padding: 14px 63px;
+      border: 1px solid #000000;
+      border-radius: 200px;
+      text-decoration: none;
+      margin-bottom: 30px;
+    }
   }
 }
