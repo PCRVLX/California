@@ -719,6 +719,14 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 .tablets{
   height: 792px;
+  img{
+    position: absolute;
+    left: 0;
+    top: calc(50% - 425px/2 + 68.51px);
+  }
+  p{
+    margin-top: 114px;
+  }
   .box-desc{
     text-align: center;
   }
