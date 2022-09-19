@@ -656,16 +656,19 @@ body.light .switch-wrap p span:nth-child(1):before {
     }
   }
 }
-.description_sec{
+
+.description_sec {
   margin-top: 75px;
-  h2{
+
+  h2 {
     font: 42px/52px $main_font;
     font-style: normal;
     font-weight: 400;
     color: #000000;
     margin-bottom: 9px;
   }
-  p{
+
+  p {
     font: 14px/17px $second_font;
     font-style: normal;
     font-weight: 400;
@@ -673,66 +676,82 @@ body.light .switch-wrap p span:nth-child(1):before {
     margin-bottom: 55px;
   }
 }
-.box-f{
+
+.box-f {
   background: #FFFFFF;
   border-radius: 32px;
 }
-.box-desc{
+
+.box-desc {
   text-align: right;
-  p{
+
+  p {
     font: 15px/19px $second_font;
     font-style: normal;
     font-weight: 400;
     color: #000000;
     margin-bottom: 0;
   }
-  h4{
+
+  h4 {
     font: 32px/38px $main_font;
     font-style: normal;
     font-weight: 400;
     color: #000000;
   }
 }
-.laptop{
+
+.laptop {
   margin-bottom: 72px;
-  .box-desc{
+
+  .box-desc {
     margin: 0 42px;
   }
 }
-.watch{
-  img{
+
+.watch {
+  img {
     margin-right: 42px;
   }
 }
-.phone{
+
+.phone {
   height: 792px;
-  img{
+
+  img {
     margin-top: 144px;
     margin-bottom: 41px;
   }
-  .box-desc{
+
+  .box-desc {
     text-align: center;
   }
 }
-.tablets{
+
+.tablets {
   height: 792px;
-  img{
+
+  img {
     position: absolute;
     left: 0;
-    top: calc(50% - 425px/2 + 68.51px);
+    top: calc(50% - 425px / 2 + 68.51px);
   }
-  p{
+
+  p {
     margin-top: 114px;
   }
-  .box-desc{
+
+  .box-desc {
     text-align: center;
   }
 }
-.most-items{
+
+.most-items {
   padding-bottom: 27px;
   padding-top: 72px;
+
   .most_selled {
-    h3{
+    h3 {
       font: 42px/52px $main_font;
       font-style: normal;
       font-weight: 400;
@@ -750,24 +769,28 @@ body.light .switch-wrap p span:nth-child(1):before {
       margin-bottom: 59px;
     }
   }
-  img{
+
+  img {
     margin-bottom: 37px;
   }
-  .sell-description{
-    h3{
+
+  .sell-description {
+    h3 {
       font: 22px/28px $main_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
     }
-    p{
+
+    p {
       font: 14px/17px $second_font;
       font-style: normal;
       font-weight: 400;
       color: #4B4B4B;
       margin-bottom: 8px;
     }
-    span{
+
+    span {
       font: 18px/22px $second_font;
       font-style: normal;
       font-weight: 400;
@@ -775,11 +798,13 @@ body.light .switch-wrap p span:nth-child(1):before {
     }
   }
 }
-.best-around{
+
+.best-around {
   margin-top: 47px;
-  background: #FFFFFF;
-  .best-selled{
-    h3{
+  background: #F5F5F5;
+
+  .best-selled {
+    h3 {
       font: 42px/52px $main_font;
       font-style: normal;
       font-weight: 400;
@@ -797,12 +822,14 @@ body.light .switch-wrap p span:nth-child(1):before {
       margin-bottom: 56px;
     }
   }
-  .background{
+
+  .background {
     background: #F8F9FA;
     border-radius: 16px;
   }
-  .best-card{
-    p{
+
+  .best-card {
+    p {
       font: 13px/17px $main_font;
       font-style: normal;
       font-weight: 400;
@@ -810,14 +837,16 @@ body.light .switch-wrap p span:nth-child(1):before {
       margin-bottom: 0;
       padding-top: 41px;
     }
-    h4{
+
+    h4 {
       font: 28px/35px $main_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
       padding-bottom: 30px;
     }
-    a{
+
+    a {
       font: 18px/22px $second_font;
       font-style: normal;
       font-weight: 400;
@@ -828,15 +857,70 @@ body.light .switch-wrap p span:nth-child(1):before {
       border-radius: 200px;
       text-decoration: none;
     }
-    img{
+
+    img {
       padding-top: 30px;
     }
   }
 }
-.card{
+
+.card {
   &:hover {
     transform: translateY(40px) scale(1.05);
     transition: ease-in-out 1s;
+  }
+}
+
+.ideas {
+  background-color: #F5F5F5;
+  padding-bottom: 24px;
+  padding-top: 47px;
+
+  .ideas_description {
+    h4 {
+      font: 42px/52px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 9px;
+    }
+
+    p {
+      font: 13px/17px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 56px;
+    }
+  }
+
+  .ideas_image {
+    border-radius: 16px;
+    margin-bottom: 73px;
+  }
+
+  .design_text {
+    p {
+      font: 24px/30px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 28px;
+    }
+  }
+  .link_ideas{
+    a{
+      text-decoration: none;
+      font: 24px/29px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: #000000;
+      &:after{
+        content: url("../images/arrow.svg");
+        position: absolute;
+      }
+    }
   }
 }
 

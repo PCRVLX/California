@@ -750,7 +750,7 @@ body.light .switch-wrap p span:nth-child(1):before {
 
 .best-around {
   margin-top: 47px;
-  background: #FFFFFF;
+  background: #F5F5F5;
 }
 .best-around .best-selled h3 {
   font: 42px/52px "Readex Pro";
@@ -805,6 +805,49 @@ body.light .switch-wrap p span:nth-child(1):before {
 .card:hover {
   transform: translateY(40px) scale(1.05);
   transition: ease-in-out 1s;
+}
+
+.ideas {
+  background-color: #F5F5F5;
+  padding-bottom: 24px;
+  padding-top: 47px;
+}
+.ideas .ideas_description h4 {
+  font: 42px/52px "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 9px;
+}
+.ideas .ideas_description p {
+  font: 13px/17px "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 56px;
+}
+.ideas .ideas_image {
+  border-radius: 16px;
+  margin-bottom: 73px;
+}
+.ideas .design_text p {
+  font: 24px/30px "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 28px;
+}
+.ideas .link_ideas a {
+  text-decoration: none;
+  font: 24px/29px "Inter";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #000000;
+}
+.ideas .link_ideas a:after {
+  content: url("../images/arrow.svg");
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
