@@ -553,6 +553,8 @@ body.light .nav:before {
 
 body.light .nav:after {
   background: rgba(250, 250, 250, 1);
+  left: 0;
+  top: 0;
 }
 
 body.light .nav__list-item a {
@@ -581,7 +583,7 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .background {
-  background: #DCE5E2;
+  background-color: #DCE5E2;
   border-radius: 32px;
 }
 
@@ -643,16 +645,25 @@ body.light .switch-wrap p span:nth-child(1):before {
 
 .owl-dots {
   text-align: center;
+  position: absolute;
+  top: 480px;
+  left: 25%;
 
   .owl-dot {
     span {
-      height: 2px;
+      height: 4px;
       width: 192px;
       background-color: #1f2029;
       display: inline-block;
       border-radius: 0;
       opacity: 1;
       margin-right: 34px;
+    }
+
+    &.active {
+      span {
+        background-color: whitesmoke;
+      }
     }
   }
 }
@@ -824,7 +835,7 @@ body.light .switch-wrap p span:nth-child(1):before {
   }
 
   .background {
-    background: #F8F9FA;
+    background-color: #F8F9FA;
     border-radius: 16px;
   }
 
@@ -908,15 +919,17 @@ body.light .switch-wrap p span:nth-child(1):before {
       margin-bottom: 28px;
     }
   }
-  .link_ideas{
-    a{
+
+  .link_ideas {
+    a {
       text-decoration: none;
       font: 24px/29px $second_font;
       font-style: normal;
       font-weight: 400;
       text-transform: capitalize;
       color: #000000;
-      &:after{
+
+      &:after {
         content: url("../images/arrow.svg");
         position: absolute;
       }
@@ -924,3 +937,168 @@ body.light .switch-wrap p span:nth-child(1):before {
   }
 }
 
+.box_animation {
+  &:hover {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transform: scale(1.1);
+  }
+}
+
+.form_section {
+  padding-top: 28px;
+  margin-bottom: 19px;
+
+  .look_text {
+    h5 {
+      font: 42px/52px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-top: 51px;
+      margin-bottom: 24px;
+    }
+  }
+
+  input {
+    border: 1px solid #C5C5C5;
+    border-radius: 100px;
+    border-left: none;
+    background: #F8F9FA;
+    height: 60px;
+    font: 14px/17px $second_font;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #F8F9FA;
+    border: 1px solid #C5C5C5;
+    border-radius: 100px;
+    border-right: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+    .first_row_btn{
+      .btn {
+        margin-right: 7px;
+      }
+    }
+  .second_row_btn{
+    .btn {
+      margin-right: 7px;
+      margin-bottom: 68px;
+    }
+  }
+    .btn-light {
+      padding: 13px 22px;
+    }
+  .never_miss{
+    background: #DCE5E2;
+    border-radius: 16px;
+    padding-top: 47px;
+    padding-bottom: 43px;
+    h5{
+      font: 42px/52px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      color: #000000;
+      margin-bottom: 9px;
+    }
+    p{
+      font: 16px/19px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 14px;
+    }
+    img{
+      margin-bottom: 14px;
+    }
+  }
+  .email_input{
+    input{
+      background: #DCE5E2;
+      border: 1px solid #000000;
+      border-radius: 54px 0 0 54px;
+      font: 14px/17px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      padding-left: 32px;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
+  .input-group-append{
+    .btn{
+      background: #000000;
+      border-radius: 0 200px 200px 0;
+      font: 14px/17px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 16px 33px;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
+}
+footer{
+  background: #F8F9FA;
+  padding-top: 29px;
+  img{
+    margin-bottom: 18px;
+  }
+  p{
+    font: 16px/19px $second_font;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+  }
+    li{
+      list-style: none;
+      font: 17px/22px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 14px;
+      &:first-of-type{
+        font: 22px/28px $main_font;
+        font-style: normal;
+        font-weight: 400;
+        color: #000000;
+        margin-bottom: 19px;
+      }
+    }
+  .low_footer{
+    border-top: 1px solid #DCE5E2;
+    margin-top: 79px;
+    padding-top: 52px;
+    p{
+      font: 18px/22px $main_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+    }
+    span{
+      font: 18px/22px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+    &:after{
+      content: url("../images/arrow.svg");
+      position: absolute;
+    }
+    }
+  }
+  }
