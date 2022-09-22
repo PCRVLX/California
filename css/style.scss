@@ -539,7 +539,7 @@ body.light .switch-wrap p span:nth-child(1):before {
   position: absolute;
   top: 145px;
   left: 56px;
-  @include max-screen(768px){
+  @include max-screen(768px) {
     top: 15px;
     left: 60px;
   }
@@ -550,10 +550,10 @@ body.light .switch-wrap p span:nth-child(1):before {
     font-weight: 400;
     color: #000000;
     margin-bottom: 19px;
-    @include max-screen(1024px){
+    @include max-screen(1024px) {
       font: 39px/45px "Readex Pro";
     }
-    @include max-screen(768px){
+    @include max-screen(768px) {
       margin-bottom: 12px;
     }
   }
@@ -584,7 +584,7 @@ body.light .switch-wrap p span:nth-child(1):before {
     position: absolute;
     top: 263px;
     left: 19px;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       top: 50%;
       left: 12px;
     }
@@ -598,7 +598,7 @@ body.light .switch-wrap p span:nth-child(1):before {
     position: absolute;
     top: 263px;
     right: 19px;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       top: 50%;
       right: 12px;
     }
@@ -614,13 +614,14 @@ body.light .switch-wrap p span:nth-child(1):before {
   position: absolute;
   top: 480px;
   left: 25%;
-  @include max-screen(1024px){
+  @include max-screen(1024px) {
     top: 375px;
     left: 30%;
   }
-  @include max-screen(768px){
+  @include max-screen(768px) {
     display: none;
   }
+
   .owl-dot {
     span {
       height: 4px;
@@ -630,7 +631,7 @@ body.light .switch-wrap p span:nth-child(1):before {
       border-radius: 0;
       opacity: 1;
       margin-right: 34px;
-      @include max-screen(1024px){
+      @include max-screen(1024px) {
         width: 120px;
         margin-right: 30px;
       }
@@ -653,7 +654,7 @@ body.light .switch-wrap p span:nth-child(1):before {
     font-weight: 400;
     color: #000000;
     margin-bottom: 9px;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       font: 40px/52px "Readex Pro";
     }
   }
@@ -688,14 +689,16 @@ body.light .switch-wrap p span:nth-child(1):before {
     color: #000000;
   }
 }
-.card_image{
-  img{
+
+.card_image {
+  img {
     width: 100%;
   }
 }
 
 .laptop {
   margin-bottom: 72px;
+
   .box-desc {
     margin: 0 42px;
   }
@@ -764,10 +767,10 @@ body.light .switch-wrap p span:nth-child(1):before {
       font-style: normal;
       font-weight: 400;
       color: #000000;
-      @include max-screen(1024px){
+      @include max-screen(1024px) {
         font: 21px/28px "Readex Pro";
       }
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font: 15px/28px "Readex Pro";
       }
     }
@@ -778,7 +781,7 @@ body.light .switch-wrap p span:nth-child(1):before {
       font-weight: 400;
       color: #4B4B4B;
       margin-bottom: 8px;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font: 10px/17px "Inter";
       }
     }
@@ -837,7 +840,7 @@ body.light .switch-wrap p span:nth-child(1):before {
       font-weight: 400;
       color: #000000;
       padding-bottom: 30px;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font: 23px/35px "Readex Pro";
       }
     }
@@ -852,7 +855,7 @@ body.light .switch-wrap p span:nth-child(1):before {
       border: 1px solid #000000;
       border-radius: 200px;
       text-decoration: none;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         padding: 12px 45px;
       }
     }
@@ -897,8 +900,9 @@ body.light .switch-wrap p span:nth-child(1):before {
   .ideas_image {
     border-radius: 16px;
     margin-bottom: 73px;
-    img{
-      width:100%;
+
+    img {
+      width: 100%;
     }
   }
 
@@ -909,7 +913,7 @@ body.light .switch-wrap p span:nth-child(1):before {
       font-weight: 400;
       color: #000000;
       margin-bottom: 28px;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         margin-bottom: 16px;
       }
     }
@@ -952,7 +956,7 @@ body.light .switch-wrap p span:nth-child(1):before {
       color: #000000;
       margin-top: 51px;
       margin-bottom: 24px;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font: 27px/52px "Readex Pro";
       }
     }
@@ -981,25 +985,30 @@ body.light .switch-wrap p span:nth-child(1):before {
       box-shadow: none;
     }
   }
-    .first_row_btn{
-      margin-bottom: 61px;
-      .btn {
-        margin-right: 7px;
-        margin-bottom: 7px;
-      }
+
+  .first_row_btn {
+    margin-bottom: 61px;
+
+    .btn {
+      margin-right: 7px;
+      margin-bottom: 7px;
     }
-    .btn-light {
-      padding: 13px 22px;
-      @include max-screen(768px){
-        padding: 13px 31px;
-      }
+  }
+
+  .btn-light {
+    padding: 13px 22px;
+    @include max-screen(768px) {
+      padding: 13px 31px;
     }
-  .never_miss{
+  }
+
+  .never_miss {
     background: #DCE5E2;
     border-radius: 16px;
     padding-top: 47px;
     padding-bottom: 43px;
-    h5{
+
+    h5 {
       font: 42px/52px $main_font;
       font-style: normal;
       font-weight: 400;
@@ -1008,19 +1017,22 @@ body.light .switch-wrap p span:nth-child(1):before {
       color: #000000;
       margin-bottom: 9px;
     }
-    p{
+
+    p {
       font: 16px/19px $second_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
       margin-bottom: 14px;
     }
-    img{
+
+    img {
       margin-bottom: 14px;
     }
   }
-  .email_input{
-    input{
+
+  .email_input {
+    input {
       background: #DCE5E2;
       border: 1px solid #000000;
       border-radius: 54px 0 0 54px;
@@ -1029,13 +1041,15 @@ body.light .switch-wrap p span:nth-child(1):before {
       font-weight: 400;
       color: #000000;
       padding-left: 32px;
-      &:focus{
+
+      &:focus {
         box-shadow: none;
       }
     }
   }
-  .input-group-append{
-    .btn{
+
+  .input-group-append {
+    .btn {
       background: #000000;
       border-radius: 0 200px 200px 0;
       font: 14px/17px $second_font;
@@ -1044,83 +1058,93 @@ body.light .switch-wrap p span:nth-child(1):before {
       text-align: center;
       color: #FFFFFF;
       padding: 16px 33px;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         padding: 15px 10px;
       }
-      &:focus{
+
+      &:focus {
         box-shadow: none;
       }
     }
   }
 }
-footer{
+
+footer {
   background: #F8F9FA;
   padding-top: 29px;
-  img{
+
+  img {
     margin-bottom: 18px;
   }
-  p{
+
+  p {
     font: 16px/19px $second_font;
     font-style: normal;
     font-weight: 400;
     color: #000000;
-    @include max-screen(768px){
+    @include max-screen(768px) {
       font: 10px/19px "Inter";
     }
-    @include max-screen(425px){
+    @include max-screen(425px) {
       font: 9px/19px "Inter";
     }
   }
-    li{
-      list-style: none;
-      font: 17px/22px $second_font;
+
+  li {
+    list-style: none;
+    font: 17px/22px $second_font;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 14px;
+    @include max-screen(768px) {
+      font: 14px/22px "Inter";
+      margin-bottom: 10px;
+    }
+
+    &:first-of-type {
+      font: 22px/28px $main_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
-      margin-bottom: 14px;
-      @include max-screen(768px){
-        font: 14px/22px "Inter";
-        margin-bottom: 10px;
+      margin-bottom: 19px;
+      @include max-screen(768px) {
+        font: 16px/28px "Readex Pro";
       }
-      &:first-of-type{
-        font: 22px/28px $main_font;
-        font-style: normal;
-        font-weight: 400;
-        color: #000000;
-        margin-bottom: 19px;
-        @include max-screen(768px){
-          font: 16px/28px "Readex Pro";
-        }
-        @include max-screen(425px){
-          font: 8px/28px "Readex Pro";
-        }
+      @include max-screen(425px) {
+        font: 8px/28px "Readex Pro";
       }
     }
-  .low_footer{
+  }
+
+  .low_footer {
     border-top: 1px solid #DCE5E2;
     margin-top: 79px;
     padding-top: 52px;
-    p{
+
+    p {
       font: 18px/22px $main_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font: 10px/22px "Readex Pro";
       }
     }
-    span{
+
+    span {
       font: 18px/22px $second_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
-      @include max-screen(768px){
+      @include max-screen(768px) {
         font: 10px/22px "Inter";
       }
-    &:after{
-      content: url("../images/arrow.svg");
-      position: absolute;
-    }
+
+      &:after {
+        content: url("../images/arrow.svg");
+        position: absolute;
+      }
     }
   }
-  }
+}
