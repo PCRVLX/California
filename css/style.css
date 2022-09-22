@@ -687,14 +687,6 @@ body.light .switch-wrap p span:nth-child(1):before {
   margin-right: 42px;
 }
 
-.phone {
-  height: 792px;
-}
-@media screen and (max-width: 768px) {
-  .phone {
-    height: 665px;
-  }
-}
 .phone img {
   margin-top: 144px;
   margin-bottom: 41px;
@@ -703,24 +695,6 @@ body.light .switch-wrap p span:nth-child(1):before {
   text-align: center;
 }
 
-.tablets {
-  height: 792px;
-}
-@media screen and (max-width: 768px) {
-  .tablets {
-    height: 665px;
-  }
-}
-.tablets img {
-  position: absolute;
-  left: 0;
-  top: calc(50% - 212.5px + 68.51px);
-}
-@media screen and (max-width: 768px) {
-  .tablets img {
-    top: calc(60% - 212.5px + 68.51px);
-  }
-}
 .tablets p {
   margin-top: 114px;
 }
@@ -850,11 +824,6 @@ body.light .switch-wrap p span:nth-child(1):before {
 .best-around .best-card img {
   margin-top: 30px;
   width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .best-around .best-card img {
-    height: 159px;
-  }
 }
 
 .card:hover {

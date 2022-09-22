@@ -709,11 +709,6 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .phone {
-  height: 792px;
-  @include max-screen(768px){
-    height: 665px;
-  }
-
   img {
     margin-top: 144px;
     margin-bottom: 41px;
@@ -725,20 +720,6 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .tablets {
-  height: 792px;
-  @include max-screen(768px){
-    height: 665px;
-  }
-
-  img {
-    position: absolute;
-    left: 0;
-    top: calc(50% - 425px / 2 + 68.51px);
-    @include max-screen(768px){
-    top:calc(60% - 212.5px + 68.51px);
-    }
-  }
-
   p {
     margin-top: 114px;
   }
@@ -879,9 +860,6 @@ body.light .switch-wrap p span:nth-child(1):before {
     img {
       margin-top: 30px;
       width: 100%;
-      @include max-screen(768px){
-        height: 159px;
-      }
     }
   }
 }
