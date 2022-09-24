@@ -150,13 +150,26 @@ body .cursor2, body .cursor3 {
 .nav__list li:nth-child(1) {
   margin-right: 33px;
 }
-.nav__list li:nth-child(2):after {
-  content: url("../images/arrow_drop.svg");
-  margin-left: 4px;
-  margin-right: 35px;
+@media screen and (max-width: 768px) {
+  .nav__list li:nth-child(1) {
+    margin-right: 0;
+  }
+}
+.nav__list li:nth-child(2) {
+  margin-right: 49px;
+}
+@media screen and (max-width: 768px) {
+  .nav__list li:nth-child(2) {
+    margin-right: 0;
+  }
 }
 .nav__list li:nth-child(3) {
   margin-right: 44px;
+}
+@media screen and (max-width: 768px) {
+  .nav__list li:nth-child(3) {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .nav__list {
@@ -518,14 +531,11 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .description {
-  position: absolute;
-  top: 145px;
-  left: 56px;
+  margin-left: 56px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .description {
-    top: 15px;
-    left: 60px;
+    margin-left: 44px;
   }
 }
 .description h2 {
@@ -535,14 +545,9 @@ body.light .switch-wrap p span:nth-child(1):before {
   color: #000000;
   margin-bottom: 19px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 428px) {
   .description h2 {
-    font: 39px/45px "Readex Pro";
-  }
-}
-@media screen and (max-width: 768px) {
-  .description h2 {
-    margin-bottom: 12px;
+    font: 38px/54px "Readex Pro";
   }
 }
 .description p {
@@ -553,6 +558,7 @@ body.light .switch-wrap p span:nth-child(1):before {
   margin-bottom: 30px;
 }
 .description a {
+  display: inline-block;
   font: 18px/22px "Inter";
   font-style: normal;
   font-weight: 400;
@@ -562,6 +568,17 @@ body.light .switch-wrap p span:nth-child(1):before {
   border-radius: 200px;
   padding: 14px 53px;
   text-decoration: none;
+}
+.description a:hover:after {
+  width: 100%;
+}
+.description a:after {
+  display: block;
+  background-color: black;
+  content: "";
+  height: 2px;
+  width: 0;
+  transition: width 0.3s ease-in-out;
 }
 
 .owl-nav .owl-prev {
@@ -670,6 +687,11 @@ body.light .switch-wrap p span:nth-child(1):before {
   font-weight: 400;
   color: #000000;
 }
+@media screen and (max-width: 428px) {
+  .box-desc h4 {
+    font: 40px/38px "Readex Pro";
+  }
+}
 
 .card_image img {
   width: 100%;
@@ -677,6 +699,11 @@ body.light .switch-wrap p span:nth-child(1):before {
 
 .laptop {
   margin-bottom: 72px;
+}
+@media screen and (max-width: 428px) {
+  .laptop {
+    margin-bottom: 0;
+  }
 }
 .laptop .box-desc {
   margin: 0 42px;
@@ -725,6 +752,11 @@ body.light .switch-wrap p span:nth-child(1):before {
 .most-items img {
   margin-bottom: 37px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .most-items img {
+    margin-bottom: 0;
+  }
 }
 .most-items .sell-description h3 {
   font: 22px/28px "Readex Pro";
@@ -806,6 +838,7 @@ body.light .switch-wrap p span:nth-child(1):before {
   }
 }
 .best-around .best-card a {
+  display: inline-block;
   font: 18px/22px "Inter";
   font-style: normal;
   font-weight: 400;
@@ -815,6 +848,17 @@ body.light .switch-wrap p span:nth-child(1):before {
   border: 1px solid #000000;
   border-radius: 200px;
   text-decoration: none;
+}
+.best-around .best-card a:hover:after {
+  width: 100%;
+}
+.best-around .best-card a:after {
+  display: block;
+  background-color: black;
+  content: "";
+  height: 2px;
+  width: 0;
+  transition: width 0.3s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .best-around .best-card a {
@@ -829,6 +873,12 @@ body.light .switch-wrap p span:nth-child(1):before {
 .card:hover {
   transform: translateY(45px);
   transition: ease-in-out 1s;
+}
+@media screen and (max-width: 768px) {
+  .card:hover {
+    transform: translateY(0);
+    transition: none;
+  }
 }
 
 .ideas {
@@ -887,6 +937,13 @@ body.light .switch-wrap p span:nth-child(1):before {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   transform: scale(1.1);
 }
+@media screen and (max-width: 768px) {
+  .box_animation:hover {
+    transform: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
 
 .form_section {
   padding-top: 28px;
@@ -935,6 +992,15 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 .form_section .btn-light {
   padding: 13px 22px;
+  transition: all 0.15s ease-in-out;
+}
+.form_section .btn-light:hover {
+  box-shadow: 0 0 8px 0 #9ACD32 inset, 0 0 5px 1px #9ACD32;
+}
+@media screen and (max-width: 885px) {
+  .form_section .btn-light:hover {
+    box-shadow: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .form_section .btn-light {
@@ -1023,17 +1089,14 @@ footer p {
 }
 footer li {
   list-style: none;
+  margin-bottom: 14px;
+}
+footer li a {
   font: 17px/22px "Inter";
   font-style: normal;
   font-weight: 400;
   color: #000000;
-  margin-bottom: 14px;
-}
-@media screen and (max-width: 768px) {
-  footer li {
-    font: 14px/22px "Inter";
-    margin-bottom: 10px;
-  }
+  text-decoration: none;
 }
 footer li:first-of-type {
   font: 22px/28px "Readex Pro";
@@ -1042,46 +1105,49 @@ footer li:first-of-type {
   color: #000000;
   margin-bottom: 19px;
 }
-@media screen and (max-width: 768px) {
-  footer li:first-of-type {
-    font: 16px/28px "Readex Pro";
-  }
-}
-@media screen and (max-width: 425px) {
-  footer li:first-of-type {
-    font: 8px/28px "Readex Pro";
-  }
-}
-footer .low_footer {
+footer .low_footer .line {
   border-top: 1px solid #DCE5E2;
-  margin-top: 79px;
-  padding-top: 52px;
 }
-footer .low_footer p {
+footer .low_footer a {
+  font: 18px/22px "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+@media screen and (max-width: 428px) {
+  footer .low_footer a {
+    font: 10px/22px "Readex Pro";
+  }
+}
+footer .low_footer a:before {
+  content: "Made by:";
   font: 18px/22px "Readex Pro";
   font-style: normal;
   font-weight: 400;
   color: #000000;
 }
-@media screen and (max-width: 768px) {
-  footer .low_footer p {
-    font: 10px/22px "Readex Pro";
+@media screen and (max-width: 428px) {
+  footer .low_footer a:before {
+    font: 13px/22px "Readex Pro";
   }
 }
-footer .low_footer span {
-  font: 18px/22px "Inter";
+footer .low_footer a:last-of-type:before {
+  content: "Powered by:";
+  font: 18px/22px "Readex Pro";
   font-style: normal;
   font-weight: 400;
   color: #000000;
 }
-@media screen and (max-width: 768px) {
-  footer .low_footer span {
-    font: 10px/22px "Inter";
+@media screen and (max-width: 428px) {
+  footer .low_footer a:last-of-type:before {
+    font: 13px/22px "Readex Pro";
   }
 }
-footer .low_footer span:after {
-  content: url("../images/arrow.svg");
-  position: absolute;
+footer .low_footer a:after {
+  content: "\f08e";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

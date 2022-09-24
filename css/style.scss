@@ -160,21 +160,23 @@ body {
 
     &:nth-child(1) {
       margin-right: 33px;
-    }
-
-    &:nth-child(2) {
-      &:after {
-        content: url("../images/arrow_drop.svg");
-        margin-left: 4px;
-        margin-right: 35px;
+      @include max-screen(768px){
+        margin-right: 0;
       }
     }
-
+    &:nth-child(2){
+      margin-right: 49px;
+      @include max-screen(768px){
+        margin-right: 0;
+      }
+    }
     &:nth-child(3) {
       margin-right: 44px;
+      @include max-screen(768px){
+        margin-right: 0;
+      }
     }
   }
-
   @include max-screen(768px) {
     display: block;
   }
@@ -536,12 +538,9 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .description {
-  position: absolute;
-  top: 145px;
-  left: 56px;
-  @include max-screen(768px) {
-    top: 15px;
-    left: 60px;
+  margin-left: 56px;
+  @include max-screen(428px){
+    margin-left: 44px;
   }
 
   h2 {
@@ -550,11 +549,8 @@ body.light .switch-wrap p span:nth-child(1):before {
     font-weight: 400;
     color: #000000;
     margin-bottom: 19px;
-    @include max-screen(1024px) {
-      font: 39px/45px "Readex Pro";
-    }
-    @include max-screen(768px) {
-      margin-bottom: 12px;
+    @include max-screen(428px){
+      font: 38px/54px "Readex Pro";
     }
   }
 
@@ -567,6 +563,7 @@ body.light .switch-wrap p span:nth-child(1):before {
   }
 
   a {
+    display: inline-block;
     font: 18px/22px $second_font;
     font-style: normal;
     font-weight: 400;
@@ -576,8 +573,21 @@ body.light .switch-wrap p span:nth-child(1):before {
     border-radius: 200px;
     padding: 14px 53px;
     text-decoration: none;
+    &:hover{
+      &:after{
+        width: 100%;
+      }
+    }
+    &:after{
+      display: block;
+      background-color: black;
+      content: "";
+      height: 2px;
+      width: 0;
+      transition: width .3s ease-in-out;
+    }
+    }
   }
-}
 
 .owl-nav {
   .owl-prev {
@@ -687,6 +697,9 @@ body.light .switch-wrap p span:nth-child(1):before {
     font-style: normal;
     font-weight: 400;
     color: #000000;
+    @include max-screen(428px){
+      font: 40px/38px "Readex Pro";
+    }
   }
 }
 
@@ -698,7 +711,9 @@ body.light .switch-wrap p span:nth-child(1):before {
 
 .laptop {
   margin-bottom: 72px;
-
+  @include max-screen(428px){
+    margin-bottom: 0;
+  }
   .box-desc {
     margin: 0 42px;
   }
@@ -759,6 +774,9 @@ body.light .switch-wrap p span:nth-child(1):before {
   img {
     margin-bottom: 37px;
     width: 100%;
+    @include max-screen(768px){
+      margin-bottom: 0;
+    }
   }
 
   .sell-description {
@@ -846,6 +864,7 @@ body.light .switch-wrap p span:nth-child(1):before {
     }
 
     a {
+      display: inline-block;
       font: 18px/22px $second_font;
       font-style: normal;
       font-weight: 400;
@@ -855,6 +874,19 @@ body.light .switch-wrap p span:nth-child(1):before {
       border: 1px solid #000000;
       border-radius: 200px;
       text-decoration: none;
+      &:hover{
+        &:after{
+          width: 100%;
+        }
+      }
+      &:after{
+        display: block;
+        background-color: black;
+        content: "";
+        height: 2px;
+        width: 0;
+        transition: width .3s ease-in-out;
+      }
       @include max-screen(768px) {
         padding: 12px 45px;
       }
@@ -871,6 +903,10 @@ body.light .switch-wrap p span:nth-child(1):before {
   &:hover {
     transform: translateY(45px);
     transition: ease-in-out 1s;
+    @include max-screen(768px){
+      transform: translateY(0);
+      transition: none;
+    }
   }
 }
 
@@ -941,6 +977,11 @@ body.light .switch-wrap p span:nth-child(1):before {
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     transform: scale(1.1);
+    @include max-screen(768px){
+      transform: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
   }
 }
 
@@ -997,6 +1038,13 @@ body.light .switch-wrap p span:nth-child(1):before {
 
   .btn-light {
     padding: 13px 22px;
+    transition: all .15s ease-in-out;
+    &:hover{
+      box-shadow: 0 0 8px 0 #9ACD32 inset, 0 0 5px 1px #9ACD32;
+      @include max-screen(885px){
+        box-shadow: none;
+      }
+    }
     @include max-screen(768px) {
       padding: 13px 31px;
     }
@@ -1092,59 +1140,65 @@ footer {
 
   li {
     list-style: none;
-    font: 17px/22px $second_font;
-    font-style: normal;
-    font-weight: 400;
-    color: #000000;
     margin-bottom: 14px;
-    @include max-screen(768px) {
-      font: 14px/22px "Inter";
-      margin-bottom: 10px;
+    a{
+      font: 17px/22px $second_font;
+      font-style: normal;
+      font-weight: 400;
+      color: #000000;
+      text-decoration: none;
     }
-
     &:first-of-type {
       font: 22px/28px $main_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
       margin-bottom: 19px;
-      @include max-screen(768px) {
-        font: 16px/28px "Readex Pro";
-      }
-      @include max-screen(425px) {
-        font: 8px/28px "Readex Pro";
-      }
     }
   }
 
   .low_footer {
-    border-top: 1px solid #DCE5E2;
-    margin-top: 79px;
-    padding-top: 52px;
-
-    p {
-      font: 18px/22px $main_font;
-      font-style: normal;
-      font-weight: 400;
-      color: #000000;
-      @include max-screen(768px) {
-        font: 10px/22px "Readex Pro";
-      }
+    .line{
+      border-top: 1px solid #DCE5E2;
     }
 
-    span {
+    a{
       font: 18px/22px $second_font;
       font-style: normal;
       font-weight: 400;
       color: #000000;
-      @include max-screen(768px) {
-        font: 10px/22px "Inter";
+      text-decoration: none;
+      @include max-screen(428px){
+        font: 10px/22px $main_font;
       }
-
-      &:after {
-        content: url("../images/arrow.svg");
-        position: absolute;
+      &:before{
+        content:"Made by:";
+        font: 18px/22px $main_font;
+        font-style: normal;
+        font-weight: 400;
+        color: #000000;
+        @include max-screen(428px){
+          font: 13px/22px $main_font;
+        }
+      }
+      &:last-of-type{
+        &:before{
+          content:"Powered by:";
+          font: 18px/22px $main_font;
+          font-style: normal;
+          font-weight: 400;
+          color: #000000;
+          @include max-screen(428px){
+            font: 13px/22px $main_font;
+          }
+        }
+      }
+      &:after{
+        content:"\f08e";
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free",sans-serif;
       }
     }
   }
 }
+
