@@ -26,14 +26,61 @@ header {
   }
 }
 
-body {
+body{
   overflow-x: hidden;
   transition: all 300ms linear;
 
   .cursor2, .cursor3 {
     display: none;
   }
+  .dialog_form {
+    max-width: 940px;
+    width: 100%;
+    .inner_form {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
 
+      .input_field {
+        height: 68px;
+        margin-right: 10px;
+
+        .first-wrap {
+          flex-grow: 1;
+        }
+
+        input {
+          height: 100%;
+          display: block;
+          width: 690px;
+          color: #FFFFFF;
+          border: 1px solid #e5e5e5;
+          padding: 10px 32px;
+          font-size: 20px;
+          border-right: 0;
+        }
+
+        .second-wrap {
+          max-width: 200px;
+        }
+
+        .btn-search {
+          height: 100%;
+          width: 200px;
+          font: 20px/20px $main_font;
+          font-style: normal;
+          font-weight: 400;
+          color: #FFFFFF;
+          border: 0;
+          cursor: pointer;
+          background: #e9cb1e;
+          transition: all .2s ease-out, color .2s ease-out;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
 }
 
 .over-hide {
@@ -620,15 +667,10 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .owl-dots {
-  text-align: center;
   position: absolute;
-  top: 480px;
-  left: 25%;
-  @include max-screen(1024px) {
-    top: 375px;
-    left: 30%;
-  }
-  @include max-screen(768px) {
+  bottom: 3%;
+  left: 24%;
+  @include max-screen(768px){
     display: none;
   }
 
@@ -780,6 +822,7 @@ body.light .switch-wrap p span:nth-child(1):before {
   }
 
   .sell-description {
+    padding: 0 10px;
     h3 {
       font: 22px/28px $main_font;
       font-style: normal;
